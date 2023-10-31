@@ -13,16 +13,27 @@
     .container {
       color: white;
       border: 5px solid gold;
-      display: flex;
+      display: inline-flex;
+      flex-direction: column;
     }
+
+    *{
+      flex-basis: 100px;
+    }
+
+    /* .container > *{
+      flex-basis: 100px;
+    } */
 
     /*
 Select all the elements that are the direct
 children of the .container class.
     */
 
-    .red {background-color: #eb4d4b;}
-    .orange {background-color: #f0932b;}
+    .red {background-color: #eb4d4b;
+      flex-basis: 100px;}
+    .orange {background-color: #f0932b;
+      flex-basis: 100px;}
     .yellow {background-color: #f6e58d;}
     .green {background-color: #6ab04c;}
     .blue {background-color: #4834d4;}
